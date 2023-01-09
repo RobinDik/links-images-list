@@ -1,22 +1,47 @@
+main {
+  margin: auto;
+  border: 10px dotted darkorange;
+}
+header {
+  margin: auto;
+  border: 20px solid bisque;
+  text-align: center;
+  font-size: 40px;
+}
 body {
   background-color: black;
   color: bisque;
 }
 h1 {
   color: bisque;
-  border: 5px solid black;
 }
+
 h2 {
   color: darkorange;
-  border: wheat 5px solid;
+  text-align: center;
+  text-decoration: wavy;
+  font-size: 30px;
 }
+@media (min-width: 1000px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 320px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
 h3 {
   color: darkorange;
-  border: wheat 5px solid;
+  border: darkorange 10px dotted;
+  text-align: center;
 }
 #green-background {
   color: orange;
   background-color: lavenderblush;
+  text-align: center;
 }
 p {
   font-family: "Courier New", Courier, monospace;
@@ -28,4 +53,24 @@ p {
 .container {
   width: 90%;
   margin: auto;
+}
+
+/* unvisited link */
+a:link {
+  color: purple;
+}
+
+/* visited link */
+a:visited {
+  color: hotpink;
+}
+
+/* mouse over link */
+a:hover {
+  color: yellowgreen;
+}
+
+/* selected link */
+a:active {
+  color: coral;
 }
